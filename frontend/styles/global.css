@@ -1,0 +1,74 @@
+/* base styles, feel free to edit */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial;
+}
+
+h1 {
+    margin:30px;
+}
+
+.hide{
+    display: none;
+}
+
+.pointerButton:hover{
+    cursor: pointer;
+}
+
+.jobPart{
+    border-radius: 10px;
+    background-color: white;
+    border: 2px dashed #000000;  
+    margin : 20px 0px 20px 0px ;
+    padding : 20px ;
+}
+
+.commentPart{
+    border-radius: 10px;
+    background-color:#f3f2ef;
+    padding : 0px 20px 0px 20px; 
+    margin : 0px 0px 20px 0px; 
+}
+button{
+    margin: 6px;
+}
+
+
+#darkPage{
+    background-color: #251f1a;
+}
+
+.float{
+    position: fixed;
+    top:0;
+    padding: auto;
+    width: 90%;
+    background-color: #251f1a;
+}
+#feedarea{
+    border-radius: 10px;
+    margin:50px;
+}
+
+
+
+#popup {
+    position: fixed;
+    padding: 20px;
+    width: 300px;
+    height: 150px;
+    top: 30%;
+    left: 20%;
+    background-color: #f3f2ef;
+}
+#close-popup{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    
+}

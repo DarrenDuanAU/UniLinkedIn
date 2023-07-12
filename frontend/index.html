@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LurkForWork</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- You can add your styles and scripts here -->
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/global.css" />
+</head>
+<body id="wholePage" style="background-color: #fee600;">
+    <!-- This is an example app structure, you can modify this as much as you choose --> 
+    <header>
+        <button id="dark-mode">dark mode</button>
+        <button id="light-mode" class="hide">light mode</button>
+        <h1>Hi lurkForWork.com</h1>
+        <h1 id="hiUser"></h1>
+
+
+    </header>
+
+    <main role="main" id="feedarea">
+        <!-- app goes here --> 
+
+        <div id="section-logged-out">
+
+            <nav>
+                <li class="pointerButton" id="nav-login">login</li>
+                <li class="pointerButton" id="nav-register">register</li>
+            </nav>
+
+            <div id="page-login">
+                Email:<br><input id ="login-email" type="text"><br>
+                Password:<br><input id="login-password" type="password"><br>
+                <button id="login-button">login</button>
+            </div>
+    
+    
+            <div id="page-register" class="hide">
+                Email:<br><input id="register-email"  type="text"><br>
+                Password:<br><input id="register-password" type="text"><br>
+                Comfirm Password:<br><input id="register-password-check"  type="text"><br>
+                Name:<br><input id="register-name" type ="text"><br>
+                <button id="register-button">register</button>
+            </div>
+        </div>
+
+
+        <div id="section-logged-in" class="hide">
+            <div id="keepFront" style="background-color: #251f1a">
+                <button id="post-job">post job</button>
+                <button id="logout">Logout</button>
+                <button id="search">Search to Watch</button>
+                <button id="personal-profile">personal profile</button>
+            </div>
+            
+            <div id="feed-items"></div>
+
+        </div>
+
+        <div id="section-create-job" class="hide">
+            title: <input id="job-title" type="text"><br>
+            image: <input id="job-image" type="file"><br>
+            description: <textarea name="job-description" id="job-description" cols="30" rows="10"></textarea><br>
+            <button id="button-create-job">create job</button>
+            <button id="button-create-job-cancel">cancel</button>
+        </div>
+
+        <div id = "section-job-update" class="hide">
+            --Job Update--<br>
+            title: <input id="update-job-title" type="text"><br>
+            image: <input id="update-job-image" type="file"><br>
+            description: <textarea name="job-description" id="update-job-description" cols="30" rows="10"></textarea><br>
+            <button id="update-job">update</button>
+            <button id="job-update-back">cancel</button>
+        </div>
+
+        <div id="section-profile" class="hide">
+            Name: <p id="uName" style="display:inline"></p><br>
+            ID: <p id="uId" style="display:inline"></p><br>
+            Email: <p id="uEmail" style="display:inline"></p><br>
+            Watching: <p id="WatchList" style="display:inline"></p><br>
+            Watched by: <p id="WatchedNum" style="display:inline"></p><br>
+            Image: <img id="pImage" class="hide"/><br><p></p>
+            <button id="profile-update">update</button>
+            <button id="profile-back">cancel</button><br><p></p>
+            Jobs: <br><p></p><p id="uJobs" style="white-space: pre-line; display:inline"></p><br>
+            <button id="watch-unwatch" class="hide">watch</button>
+            <button id="profile-back1">cancel</button>
+        </div>
+
+        <div id="section-profile-update" class="hide">
+            --Profile Update--<br>
+            Email address: <input id="update-email" type="text"><br>
+            Password:<input id="update-password" type="text"><br>
+            Name:<input id="update-name" type="text"><br>
+            Image: <input id="update-image" type="file"><br>
+            <button id="update-button">update</button>
+            <button id="profile-update-back">cancel</button>
+        </div>
+
+        <div id="popup" class="hide">
+            <button id = "close-popup">
+                x
+            </button>
+            <p id="errMsg"></p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; lurkforwork.com 2022</p>
+    </footer>
+
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
