@@ -1,4 +1,4 @@
-# Assessment 3 - Vanilla JS: LurkForWork
+# Assessment 3 - Vanilla JS: UniLinkedIn
 
 1. Background & Motivation
 2. The Task
